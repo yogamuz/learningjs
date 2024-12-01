@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="homepage.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/feather-icons"></script>
+        <title>Amazon Project</title>
+    </head>
+    <body>
+        <header class="js-amazon-header amazon-header">
+            <section class="logo-section">
+                <a href="#" target="_blank">
+                    <img src="img/amazon-logo-white.png" alt="" class="amazon-logo">
+                </a>
+            </section>
+            <section class="middle-section">
+                <input
+                    class="js-search-bar search-bar"
+                    type="text"
+                    placeholder="Search"
+                    value
+                    data-id="search-input"
+                >
+                <button class="search-logo">
+                    <i data-feather="search"></i>
+                </button>
+            </section>
+            <section class="right-section">
+                <a class="orders-link header-link" href="orders">
+                    <span class="return-text">Returns</span>
+                    <span class="order-text">& Orders</span>
+                </a>
+                <a class="cart-link header-link" href="checkout.html">
+                    <i class="cart-icon" data-feather="shopping-cart"></i>
+                    <div class="js-cart-quantity cart-quantity" data-testid="cart-quantity">0</div>
+                    <div class="cart-text">Cart</div>
+                </a>
+            </section>
+            <section></section>
+        </header>
+        <main>
+            <div class="js-products-grid products-grid">
+                <!-- <div class="js-products-container product-container" data-product-id="e43638ce-6aa0-4b85-b27f-e1d07eb678c6" data-testid="product-container-e43638ce-6aa0-4b85-b27f-e1d07eb678c6">
+                    <div class="product-image-container">
+                        <img class="js-product-image product-image" src="/img/socks.jpg" alt="">
+                        <div class="product-name limit-to-2-lines">
+                            Black and Gray Athletic 
+                            Cotton Socks - 6 Pairs
+                        </div>
+                    </div>
+                    <div class="product-rating-container">
+                        <img class="rating-img" src="/img/rating-45.png" alt="">
+                        <div class="product-rating-count link-primary">87</div>
+                    </div>
+                    <div class="product-price">$10.90</div>
+                    <div class="product-quantity-container">
+                        <select class="js-quantity-selector" data-testid="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <div class="product-spacer"></div>
+                    </div>
+                    <div class="js-added-to-cart-message added-to-cart-message" data-testid="added-to-cart-message">
+                        <img src="" alt="">
+                        "Added"
+                    </div>
+                    <button class="js-add-to-cart-button add-to-cart-button button-primary" data-testid="add-to-cart-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="js-products-container product-container2" data-product-id="e43638ce-6aa0-4b85-b27f-e1d07eb678c6" data-testid="product-container-e43638ce-6aa0-4b85-b27f-e1d07eb678c6">
+                    <div class="product-image-container">
+                        <img class="js-product-image product-image" src="/img/yellow-hoodie.jpg" alt="">
+                        <div class="product-name limit-to-2-lines">
+                            Plain Hooded Fleece Sweatshirt
+                        </div>
+                    </div>
+                    <div class="product-rating-container">
+                        <img class="rating-img" src="/img/rating-5.png" alt="">
+                        <div class="product-rating-count link-primary">317</div>
+                    </div>
+                    <div class="product-price">$24.00</div>
+                    <div class="product-quantity-container">
+                        <select class="js-quantity-selector" data-testid="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <div class="product-spacer"></div>
+                    </div>
+                    <div class="js-added-to-cart-message added-to-cart-message" data-testid="added-to-cart-message">
+                        <img src="" alt="">
+                        "Added"
+                    </div>
+                    <button class="js-add-to-cart-button add-to-cart-button button-primary" data-testid="add-to-cart-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="js-products-container product-container3" data-product-id="e43638ce-6aa0-4b85-b27f-e1d07eb678c6" data-testid="product-container-e43638ce-6aa0-4b85-b27f-e1d07eb678c6">
+                    <div class="product-image-container">
+                        <img class="js-product-image product-image" src="/img/luxury-toweljpg.jpg" alt="">
+                        <div class="product-name limit-to-2-lines">
+                            Luxury Towel Set - Graphite Gray
+                        </div>
+                    </div>
+                    <div class="product-rating-container">
+                        <img class="rating-img" src="/img/rating-45.png" alt="">
+                        <div class="product-rating-count link-primary">144</div>
+                    </div>
+                    <div class="product-price">$30.95</div>
+                    <div class="product-quantity-container">
+                        <select class="js-quantity-selector" data-testid="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <div class="product-spacer"></div>
+                    </div>
+                    <div class="js-added-to-cart-message added-to-cart-message" data-testid="added-to-cart-message">
+                        <img src="" alt="">
+                        "Added"
+                    </div>
+                    <button class="js-add-to-cart-button add-to-cart-button button-primary" data-testid="add-to-cart-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="js-products-container product-container4" data-product-id="e43638ce-6aa0-4b85-b27f-e1d07eb678c6" data-testid="product-container-e43638ce-6aa0-4b85-b27f-e1d07eb678c6">
+                    <div class="product-image-container">
+                        <img class="js-product-image product-image" src="/img/adults-cottonl.jpg" alt="">
+                        <div class="product-name limit-to-2-lines">
+                            Adults Plain Cotton T-Shirt - 2 Pack
+                        </div>
+                    </div>
+                    <div class="product-rating-container">
+                        <img class="rating-img" src="/img/rating-4.png" alt="">
+                        <div class="product-rating-count link-primary">56</div>
+                    </div>
+                    <div class="product-price">$7.99</div>
+                    <div class="product-quantity-container">
+                        <select class="js-quantity-selector" data-testid="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <div class="product-spacer"></div>
+                    </div>
+                    <div class="js-added-to-cart-message added-to-cart-message" data-testid="added-to-cart-message">
+                        <img src="" alt="">
+                        "Added"
+                    </div>
+                    <button class="js-add-to-cart-button add-to-cart-button button-primary" data-testid="add-to-cart-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="js-products-container product-container5" data-product-id="e43638ce-6aa0-4b85-b27f-e1d07eb678c6" data-testid="product-container-e43638ce-6aa0-4b85-b27f-e1d07eb678c6">
+                    <div class="product-image-container">
+                        <img class="js-product-image product-image" src="/img/basketball.jpg" alt="">
+                        <div class="product-name limit-to-2-lines">
+                            Intermediate Size Basketball
+                        </div>
+                    </div>
+                    <div class="product-rating-container">
+                        <img class="rating-img" src="/img/rating-4.png" alt="">
+                        <div class="product-rating-count link-primary">127</div>
+                    </div>
+                    <div class="product-price">$20.95</div>
+                    <div class="product-quantity-container">
+                        <select class="js-quantity-selector" data-testid="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <div class="product-spacer"></div>
+                    </div>
+                    <div class="js-added-to-cart-message added-to-cart-message" data-testid="added-to-cart-message">
+                        <img src="" alt="">
+                        "Added"
+                    </div>
+                    <button class="js-add-to-cart-button add-to-cart-button button-primary" data-testid="add-to-cart-button">
+                        Add to Cart
+                    </button>
+                </div> --></div>
+        </main>
+
+        <!-- entry point -->
+        <script type="module" src="script/amazon.js"></script>
+        <script>
+        feather.replace();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+header {
+    z-index: 9999;
+}
+
+.products-grid .product-container {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-right: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+}
+.amazon-header {
+    background-color: rgb(19, 25, 33);
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+.amazon-logo {
+    width: 40%;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+
+}
+
+.middle-section {
+    align-items: center;
+    display: flex;
+    margin-right: 8rem;
+}
+
+.search-bar {
+    width: 50rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+}
+
+.search-logo {
+    background-color: rgb(254, 189, 105);
+    border: none;
+    width: 45px;
+    height: 44.5px;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+
+}
+
+.right-section {
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.cart-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-quantity {
+    bottom: 0.7rem;
+    right: 0.85rem;
+    position: relative;
+}
+
+.cart-icon {
+    top: 0.3rem;
+    position: relative;
+}
+
+.cart-text {
+    position: relative;
+    top: 0.5rem;
+}
+
+/* Product Socks */
+.product-image {
+    width: 10%;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-container {
+    margin-left: 2rem;
+}
+
+.limit-to-2-lines {
+    width: 13%;
+    /* Atur lebar elemen */
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Membatasi ke 2 baris */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    /* Pastikan ini untuk memungkinkan pemotongan */
+}
+
+.rating-img {
+    width: 7%;
+}
+
+.product-rating-count {
+    width: 1%;
+    font-size: 18px;
+    margin-left: 7rem;
+    top: -1.35rem;
+    color: #0D92F4;
+    /* Slightly darker light blue */
+
+    position: relative;
+}
+
+.product-price {
+    width: 3%;
+    font-weight: bold;
+    position: relative;
+    bottom: 1rem;
+}
+select {
+    color: rgb(33, 33, 33);
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(213, 217, 217);
+    border-radius: 8px;
+    padding: 3px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.add-to-cart-button {
+    background-color: yellow;
+    width: 15%;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    background-color: rgb(255, 216, 20);
+    border: 8px solid rgb(252, 210, 0);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Product 2 */
+.product-container2{
+    position: relative;
+    left: 22rem;
+    bottom: 32.5rem;
+}
+.product-container3{
+    position: relative;
+    left: 40rem;
+    bottom: 61.1rem;
+}
+
+.product-container4{
+    position: relative;
+    left: 58rem;
+    bottom: 90.25rem;
+}
+
+.product-container5{
+    position: relative;
+    left: 75rem;
+    bottom: 118.9rem;
+}
+.text-green {
+    color: green;
+}
+.check-img {
+    width: 1%;
+}
